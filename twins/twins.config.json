@@ -1,0 +1,7 @@
+{
+    "page": "src/page",
+    "components": "src/components",
+    "build": "build",
+    "public": "src/public",
+    "static": "src/static"
+}

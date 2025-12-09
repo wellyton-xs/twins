@@ -4,8 +4,16 @@ async function readFile(path){
 	return await content.text()
 }
 
+async function readSourceTree() {
+    const source = "src/"
+    const html = `${source}/html`
+}
+
+/* INIT
+ * This function loads content from build to index.html
+ */
 export async function init(root){
-	const file = await readFile("index.html")
+	const file = await readFile("page.html")
 	const lines = file.split("\n")
 	console.log(file)
 	// for (let i = 0; i < lines.length; i++){
