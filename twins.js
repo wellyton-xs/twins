@@ -5,7 +5,7 @@ import * as path from 'path'
 
 export const __filename = fileURLToPath(import.meta.url)
 export const __dirname = path.dirname(__filename)
-const arg = process.argv[2].slice(2)
+const arg = process.argv.slice(2)
 
 async function read_file_from_browser(path){
 	const content = await fetch(path)
