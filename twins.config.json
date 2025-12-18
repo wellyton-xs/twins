@@ -1,4 +1,5 @@
 {
+    "no_src": false,
     "page": "src/page",
     "components": "src/components",
     "build": "build",
