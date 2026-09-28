@@ -1,0 +1,51 @@
+/* Twins programming language, by Wellyton B. Galdino 
+
+    Twins is a statically typed programming language, that is 
+    designed to help programmers to write Web applications with
+    a full compilation process that is so helpfull in other languages.
+
+    Twins takes inspirations by C, Elixir, Lua, Python and glues everything
+    togheter to give programmers a good experience while programming web
+    interfaces.
+
+    I want to make this a fully functional programming language for the Web
+    I don't know how far this will go, but let's see it.
+*/
+
+/* FUNCTIONS
+    functions can be declared wit a notation similar to python and c
+    type name(args...): 
+        ...
+    end
+    since a function is not a tag, dont need : in end keyword
+*/
+
+int count():
+	value = value + 1
+end
+
+int state value = 0
+
+/* TAGS AND PAGES
+    To use a HTML tag, you can use ":" followed by the name of the tag
+    everithing you write in : will be translated to a tag.
+
+    To create a function that returns a page content or a component, you
+    need to specify the view type, and then, you can write tags normally.
+*/
+
+view DummyExample()
+    :html
+	    :head
+		    :title <Dumb Example>
+	    :end
+
+	    :body
+		    :button onclick={count} 
+                Click me idiot ${value}
+            :end
+            :p <<This is a page written in Twins>>
+            :a href="https://wellyxs.com/twins" <<Twins docs>>
+	    :end
+    :end
+end
